@@ -19,14 +19,14 @@ public class A1Novice {
 			String first = scan.next();
 			String last = scan.next();
 			int items = scan.nextInt();
-			double totalPrice = 0;
+			double totalPrice = 0.00;
 			for (int b=0; b<items; b++) {
 				int numberEach = scan.nextInt();
 				String nameEach = scan.next();
 				double priceEach = scan.nextDouble();
 				totalPrice += numberEach * priceEach;
 			}
-			System.out.println(first.charAt(0) + ". " + last + ": " + totalPrice);
+			System.out.println(first.charAt(0) + ". " + last + ": " + String.format("%.2f", totalPrice));
 			
 		}
 		

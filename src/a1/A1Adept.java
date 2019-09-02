@@ -47,24 +47,24 @@ public class A1Adept {
 		double max = 0.0;
 		String wom = "r";
 			for (int y=0; y<jiff.length; y++) {
-				if (jiff[y] > max) {
+				if (jiff[y] >= max) {
 					max = jiff[y];
 					wom = mars[y];
 					
 				}
 			}
-			System.out.println("Biggest: " + wom + "(" + String.format("%.2f", max) + ")");
+			System.out.println("Biggest: " + wom + " (" + String.format("%.2f", max) + ")");
 			
 			
 			double min = jiff[0];
-			String man = "j";
+			String man = "";
 			for (int e=0; e<jiff.length; e++) {
-				if (jiff[e] < min) {
+				if (jiff[e] <= min) {
 					min = jiff[e];
 					man = mars[e];
 				}
 			}
-			System.out.println("Smallest: " + man + "(" + String.format("%.2f", min) + ")");
+			System.out.println("Smallest: " + man + " (" + String.format("%.2f", min) + ")");
 		
 		double sum = 0.0;
 				for (int r=0; r<jiff.length; r++) {
